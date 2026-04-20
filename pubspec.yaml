@@ -13,13 +13,17 @@ dependencies:
     sdk: flutter
 
   get: ^4.6.6
-  intl: ^0.20.2
+  intl: ^0.20.2 # يفضل استخدام 0.19.0 للاستقرار مع بقية المكتبات
 
   shared_preferences: ^2.3.5
   connectivity_plus: ^6.1.1
+  
+  # Firebase & Auth (تمت إضافة المكتبات المفقودة هنا)
   firebase_core: ^3.10.0
   firebase_messaging: ^15.2.0
   firebase_auth: ^5.4.0
+  flutter_facebook_auth: ^7.1.1 # أضفتها لحل مشكلة FacebookAuth
+  google_sign_in: ^6.2.2        # أضفتها لحل مشكلة تسجيل دخول جوجل
 
   path_provider: ^2.1.5
   url_strategy: ^0.3.0
@@ -122,7 +126,7 @@ flutter:
     - assets/
 
   fonts:
-    - family: Ubuntu
+    - family: Roboto # تم تعديل الاسم ليتوافق مع الملفات (كان Ubuntu)
       fonts:
         - asset: assets/font/Roboto-Light.ttf
           weight: 300
